@@ -20,8 +20,8 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
-    private AuthenticationManager authenticationManager;
-    private JwtConstant jwtConstant;
+    private final AuthenticationManager authenticationManager;
+    private final JwtConstant jwtConstant;
 
     public AuthenticationFilter(AuthenticationManager authenticationManager, JwtConstant jwtConstant) {
         this.authenticationManager = authenticationManager;
